@@ -35,12 +35,22 @@
 const moon = "기범석"
 const jb = moon.split("")
 // 
-console.log(jb)
+// console.log(jb)
 // 해당 console.log "문자열"이 [배열]로 출력 되는 이유는 split method 때문이다 각 문자를 [배열]의 원소로 나눠서 그 결과를 jb 변수에 할당.
 
 // 3. 정렬.
+let numbers = [1,2,3,5,6,7,7,5,5,4,2,2,2,3]
 
-// 4. filter.
+ numbers = numbers.sort((a,b) => (a - b) * - 1 )
+    // 오름차순 = .sort  ((a,b) => a - b ) 비교 대상자 
+    // 내림차순 = .sort  ((a,b) => (a - b) * -1 )
+    // console.log(numbers)
+
+// 4. filter.ㅈ
+const even = numbers.filter(e => e % 1 == 0)
+// 짝수 (e => e % 2 == 0) 2의 배수를 출력
+// 홀수 ()
+console.log(even)
 
 // 5. 배열 재가공.
 
